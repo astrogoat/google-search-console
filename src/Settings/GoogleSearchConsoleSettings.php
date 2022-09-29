@@ -14,6 +14,7 @@ class GoogleSearchConsoleSettings extends AppSettings
             'site_verification' => 'string',
         ];
     }
+
     public function description(): string
     {
         return 'Interact with Google Search Console.';

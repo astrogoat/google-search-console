@@ -2,12 +2,12 @@
 
 namespace Astrogoat\GoogleSearchConsole;
 
+use Astrogoat\GoogleSearchConsole\Settings\GoogleSearchConsoleSettings;
 use Helix\Lego\Apps\App;
 use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Helix\Lego\LegoManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Astrogoat\GoogleSearchConsole\Settings\GoogleSearchConsoleSettings;
 
 class GoogleSearchConsoleServiceProvider extends PackageServiceProvider
 {

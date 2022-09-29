@@ -2,9 +2,9 @@
 
 namespace Astrogoat\GoogleSearchConsole\Tests;
 
+use Astrogoat\GoogleSearchConsole\GoogleSearchConsoleServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Astrogoat\GoogleSearchConsole\GoogleSearchConsoleServiceProvider;
 
 class TestCase extends Orchestra
 {
