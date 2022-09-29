@@ -1,14 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton\Actions;
+namespace Astrogoat\GoogleSearchConsole\Actions;
 
 use Helix\Lego\Apps\Actions\Action;
 
-class SkeletonAction extends Action
+class GoogleSearchConsoleAction extends Action
 {
     public static function actionName(): string
     {
-        return 'Skeleton action name';
+        return 'GoogleSearchConsole action name';
     }
 
     public static function run(): mixed

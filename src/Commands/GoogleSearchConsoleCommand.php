@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Astrogoat\GoogleSearchConsole\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class GoogleSearchConsoleCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'google-search-console';
 
     public $description = 'My command';
 
