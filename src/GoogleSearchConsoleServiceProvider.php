@@ -3,6 +3,7 @@
 namespace Astrogoat\GoogleSearchConsole;
 
 use Helix\Lego\Apps\App;
+use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Helix\Lego\LegoManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -16,11 +17,11 @@ class GoogleSearchConsoleServiceProvider extends PackageServiceProvider
             ->name('google-search-console')
             ->settings(GoogleSearchConsoleSettings::class)
             ->migrations([
-                __DIR__ . '/../database/migrations',
                 __DIR__ . '/../database/migrations/settings',
             ])
-            ->backendRoutes(__DIR__.'/../routes/backend.php')
-            ->frontendRoutes(__DIR__.'/../routes/frontend.php');
+            ->includeFrontendViews(function (IncludeFrontendViews $frontendViews) {
+                return $frontendViews->addToHead('google-search-console::meta-verification');
+            });
     }
 
     public function registeringPackage()

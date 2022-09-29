@@ -17,10 +17,7 @@ composer require astrogoat/google-search-console
 
 ## Usage
 
-```php
-$google-search-console = new Astrogoat\GoogleSearchConsole();
-echo $google-search-console->echoPhrase('Hello, Astrogoat!');
-```
+Just enable the app and update the site verification code.
 
 ## Testing
 

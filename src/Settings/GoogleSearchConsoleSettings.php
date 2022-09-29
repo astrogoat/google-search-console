@@ -3,32 +3,20 @@
 namespace Astrogoat\GoogleSearchConsole\Settings;
 
 use Helix\Lego\Settings\AppSettings;
-use Illuminate\Validation\Rule;
-use Astrogoat\GoogleSearchConsole\Actions\GoogleSearchConsoleAction;
 
 class GoogleSearchConsoleSettings extends AppSettings
 {
-    // public string $url;
+    public string $site_verification;
 
     public function rules(): array
     {
         return [
-            // 'url' => Rule::requiredIf($this->enabled === true),
+            'site_verification' => 'string',
         ];
     }
-
-    // protected static array $actions = [
-    //     GoogleSearchConsoleAction::class,
-    // ];
-
-    // public static function encrypted(): array
-    // {
-    //     return ['access_token'];
-    // }
-
     public function description(): string
     {
-        return 'Interact with GoogleSearchConsole.';
+        return 'Interact with Google Search Console.';
     }
 
     public static function group(): string
